@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(236, 234, 236) !important;
+  height: 1111px;
+}
+
+:root {
+  --secondary: rgb(173 141 141);
+  --secondary-light: rgb(231 213 213);
+}
+
+/* ********** utility class ****************/
+.d-flex {
+  display: flex;
+}
+.justify-between {
+  justify-content: space-between;
+}
+
+.banner {
+  color: white;
+  height: 360px;
+  width: 100%;
+  background-color: rgb(90, 74, 109);
+}
+.banner h1 {
+  text-align: center;
+}
+.progress-section {
+  margin: 0 auto;
+  width: 600px;
+}
+.progress-barr {
+  width: 100%;
+  height: 3px;
+  background-color: rgb(154, 138, 175);
+  border-radius: 6px;
+}
+.progress-barr::before {
+  width: 10px;
+  height: 10px;
+  content: "";
+  display: block;
+  background-color: white;
+  border-radius: 50%;
+  left: -10px;
+  top: -4px;
+  position: relative;
+}
+.progress-content {
+  font-weight: bolder;
+}
+
+/* main content section start here */
+.main-content-wrapper {
+  position: relative;
+}
+
+.main-content-box {
+  position: absolute;
+  padding: 20px 40px;
+  left: 50%;
+  transform: translate(-50%);
+  top: -90px;
+  width: 800px;
+  height: 560px;
+  background-color: white;
+  margin: 0 auto;
+  box-shadow: 1px 2px 8px #b9b9b9;
+  margin-bottom: 60px;
+}
+.spinner {
+  text-align: center;
+}
+.main-content-box h5 {
+  color: rgb(114, 102, 102);
+  font-weight: bold;
+}
+.main-content-box p {
+  font-size: 19px;
+  color: var(--secondary);
+}
+/* main content section ends here */
+
+/* main content controller section starts here */
+
+.main-content-controller div p {
+  color: var(--secondary);
+  font-weight: bolder;
+}
+
+/* main content controller section ends here */
+
+.color-box {
+  background-color: var(--secondary-light);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 36px;
+  color: white;
+}
+#secondary-color-box {
+  display: none;
+}
+.bi.bi-check {
+  font-size: 30px;
+}
+#color-add-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: var(--secondary);
+  font-size: 30px;
+  text-align: center;
+  line-height: 30px;
+  border: none;
+}
+.color-box-wrapper > div {
+  margin: 0 10px;
+}
+
+/* custom select box */
+
+.custom-select select {
+  width: 180px;
+  background-color: rgb(236, 235, 236);
+  font-weight: bolder;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: #8b7474;
+  outline: none;
+}
+.save-btn {
+  padding: 9px 40px;
+  border-radius: 6px;
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  border: none;
+  outline: none;
+}
+.back-btn {
+  border: none;
+  outline: none;
+  margin-top: 20px;
+  background-color: transparent;
+  font-weight: bolder;
+  color: grey;
+}
+
+#explore-btn {
+  background-color: var(--secondary-light);
+  border: none;
+  outline: none;
+  padding: 8px 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* widget box  */
+
+.widget-box {
+  position: absolute;
+  width: 340px;
+  z-index: 9;
+  height: 200px;
+  background-color: white;
+  padding: 20px 25px;
+  box-shadow: 1px 4px 10px 0px #f9c5c5;
+  top: 140px;
+}
+.position-right {
+  right: 30px;
+}
+.position-left {
+  left: 30px;
+}
+.widget-box h5 {
+  color: var(--secondary);
+}
+.widget-box p {
+  color: rgb(98, 105, 98);
+}
+.divder {
+  width: 140px;
+  margin: auto;
+  height: 1px;
+  background-color: var(--secondary);
+}
+#color-picker {
+  visibility: hidden;
+}
+.col-picker-box {
+  top: 30px;
+  left: -190px;
+}
